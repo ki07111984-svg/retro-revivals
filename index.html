@@ -3,256 +3,212 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Retro Revivals | Retro Games, Toys & Collectibles</title>
-
-<meta name="description" content="Retro Revivals - Retro games, classic toys, Pokémon cards, consoles and collectibles. Bringing nostalgia back to life.">
-
 <meta name="theme-color" content="#00ff88">
-
+<meta name="description" content="Retro Revivals - Retro games, toys, Pokémon cards and collectibles.">
 <link rel="manifest" href="./manifest.json">
-<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="icon" href="./favicon.svg">
+<title>Retro Revivals</title>
 
 <style>
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #151515;
-    color: white;
-    line-height: 1.6;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  line-height: 1.6;
 }
 
 header {
-    background: #111;
-    text-align: center;
-    padding: 30px 15px 25px;
-    border-bottom: 4px solid #00ff88;
+  background: #000;
+  text-align: center;
+  padding: 20px 15px;
+  border-bottom: 4px solid #00ff88;
 }
 
 .logo {
-    width: min(90%, 650px);
-    max-height: 500px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 25px;
+  width: 95%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
 }
 
 header h1 {
-    font-size: clamp(38px, 8vw, 70px);
-    font-weight: 900;
-    letter-spacing: 2px;
+  font-size: clamp(34px, 8vw, 60px);
+  margin-top: 15px;
 }
 
-.tagline {
-    color: #00ff88;
-    font-size: clamp(20px, 4vw, 32px);
-    margin-top: 8px;
+header p {
+  color: #00ff88;
+  font-size: clamp(18px, 4vw, 28px);
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #000;
-    border-bottom: 1px solid #222;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  background: #050505;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav a {
-    display: block;
-    padding: 18px 22px;
-    font-size: 18px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 8px;
 }
 
 nav a:hover {
-    color: #00ff88;
+  background: #00ff88;
+  color: #000;
 }
 
 main {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 15px;
 }
 
 section {
-    padding: 70px 20px;
+  margin-bottom: 60px;
+  scroll-margin-top: 80px;
 }
 
-section h2 {
-    text-align: center;
-    font-size: clamp(30px, 6vw, 48px);
-    margin-bottom: 35px;
+.hero {
+  text-align: center;
+  padding: 40px 10px;
 }
 
-.intro {
-    text-align: center;
-    max-width: 850px;
-    margin: auto;
-    font-size: 20px;
+.hero h2 {
+  font-size: clamp(30px, 7vw, 50px);
+  margin-bottom: 15px;
 }
 
-.categories {
-    background: #101010;
+.hero p {
+  font-size: 18px;
+  color: #ddd;
 }
 
-.category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
+.install-box {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #1c1c1c;
+  border: 2px solid #00ff88;
+  border-radius: 15px;
 }
 
-.category {
-    background: #1d1d1d;
-    border: 2px solid #333;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    transition: 0.25s;
-}
-
-.category:hover {
-    transform: translateY(-5px);
-    border-color: #00ff88;
-}
-
-.category img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    background: #080808;
-    padding: 15px;
-}
-
-.category h3 {
-    padding: 18px 10px;
-    font-size: 23px;
-    color: #00ff88;
-}
-
-.about {
-    text-align: center;
-}
-
-.about p {
-    max-width: 850px;
-    margin: 0 auto 20px;
-    font-size: 19px;
-}
-
-.contact {
-    background: #101010;
-    text-align: center;
-}
-
-.contact p {
-    max-width: 700px;
-    margin: 0 auto 25px;
-    font-size: 19px;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.social a {
-    background: #1d1d1d;
-    border: 2px solid #00ff88;
-    color: #00ff88;
-    padding: 12px 22px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.social a:hover {
-    background: #00ff88;
-    color: #000;
-}
-
-.install-area {
-    text-align: center;
-    padding: 25px 15px;
-    background: #000;
+.install-box h3 {
+  color: #00ff88;
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 
 #installButton {
-    display: none;
-    border: 0;
-    background: #00ff88;
-    color: #000;
-    padding: 15px 28px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+  display: none;
+  margin: 20px auto 0;
+  padding: 14px 22px;
+  border: 0;
+  border-radius: 10px;
+  background: #00ff88;
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.section-title {
+  text-align: center;
+  color: #00ff88;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.category {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.category img {
+  width: 160px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.category h3 {
+  color: #00ff88;
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.category p {
+  color: #ccc;
+}
+
+.about {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.contact {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.social a {
+  background: #00ff88;
+  color: #000;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 footer {
-    background: #000;
-    text-align: center;
-    padding: 30px 15px;
-    border-top: 3px solid #00ff88;
+  background: #000;
+  border-top: 3px solid #00ff88;
+  text-align: center;
+  padding: 25px;
+  color: #aaa;
 }
 
-footer p {
-    margin: 5px 0;
-    color: #aaa;
+footer strong {
+  color: #00ff88;
 }
 
-@media (max-width: 600px) {
-
-    nav a {
-        padding: 14px 12px;
-        font-size: 16px;
-    }
-
-    section {
-        padding: 50px 15px;
-    }
-
-    .category-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-    }
-
-    .category img {
-        height: 130px;
-    }
-
-    .category h3 {
-        font-size: 17px;
-        padding: 12px 5px;
-    }
-
-    .intro,
-    .about p,
-    .contact p {
-        font-size: 17px;
-    }
-}
 </style>
 </head>
 
@@ -260,102 +216,138 @@ footer p {
 
 <header>
 
-<img class="logo" src="./logo.jpg" alt="Retro Revivals logo">
+<img src="./logo.jpg" alt="Retro Revivals" class="logo">
 
 <h1>RETRO REVIVALS</h1>
 
-<p class="tagline">
-Bringing Nostalgia Back To Life
-</p>
+<p>Bringing Nostalgia Back To Life</p>
 
 </header>
 
 <nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#categories">Categories</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
 
-<div class="install-area">
-<button id="installButton">
-📱 Install Retro Revivals App
-</button>
-</div>
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</nav>
 
 <main>
 
-<section id="home">
+<section id="home" class="hero">
 
 <h2>Welcome To Retro Revivals</h2>
 
-<p class="intro">
+<p>
 Your place for retro games, classic toys, Pokémon cards,
-consoles and collectibles.
-Discover nostalgic treasures and relive the legends of the past.
+consoles and collectables.
 </p>
 
-</section>
+<div class="install-box">
 
-<section id="categories" class="categories">
+<h3>📱 Install Retro Revivals</h3>
 
-<h2>Explore Our Categories</h2>
+<p>
+Add Retro Revivals to your phone and use it just like an app.
+</p>
 
-<div class="category-grid">
-
-<a class="category" href="#contact">
-<img src="./gaming.svg" alt="Retro gaming">
-<h3>🎮 Retro Gaming</h3>
-</a>
-
-<a class="category" href="#contact">
-<img src="./cards.svg" alt="Pokémon cards">
-<h3>🃏 Pokémon & Cards</h3>
-</a>
-
-<a class="category" href="#contact">
-<img src="./collectibles.svg" alt="Collectibles">
-<h3>⭐ Collectibles</h3>
-</a>
-
-<a class="category" href="#contact">
-<img src="./collectibles.svg" alt="Vintage toys">
-<h3>🧸 Vintage Toys</h3>
-</a>
+<button id="installButton">
+Install Retro Revivals App
+</button>
 
 </div>
 
 </section>
 
-<section id="about" class="about">
 
-<h2>About Retro Revivals</h2>
+<section id="categories">
+
+<h2 class="section-title">Categories</h2>
+
+<div class="categories">
+
+<div class="category">
+
+<img src="./gaming.svg" alt="Retro Gaming">
+
+<h3>🎮 Retro Gaming</h3>
 
 <p>
-Retro Revivals is all about bringing yesterday back to life.
+Classic consoles, games and gaming collectibles.
 </p>
 
-<p>
-From classic consoles and retro games to Pokémon cards,
-vintage toys and collectables, we're passionate about
-finding great retro items and giving them a new home.
-</p>
+</div>
+
+
+<div class="category">
+
+<img src="./cards.svg" alt="Pokémon Cards">
+
+<h3>🃏 Pokémon Cards</h3>
 
 <p>
-<strong>Relive The Past. Revive The Legends.</strong>
+Pokémon cards, sealed products and collectables.
 </p>
+
+</div>
+
+
+<div class="category">
+
+<img src="./collectibles.svg" alt="Collectibles">
+
+<h3>⭐ Collectibles</h3>
+
+<p>
+Rare, unusual and nostalgic collectables.
+</p>
+
+</div>
+
+
+<div class="category">
+
+<img src="./gaming.svg" alt="Classic Toys">
+
+<h3>🧸 Classic Toys</h3>
+
+<p>
+Classic toys and favourites from the past.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
-<section id="contact" class="contact">
 
-<h2>Get In Touch</h2>
+<section id="about">
+
+<h2 class="section-title">About Retro Revivals</h2>
+
+<div class="about">
 
 <p>
-Follow Retro Revivals and keep up with new finds,
-products and retro collectibles.
+Retro Revivals is all about bringing yesterday back to life.
+From classic games and consoles to Pokémon cards, toys and
+collectables, we're passionate about finding great retro items
+and giving them a new lease of life.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Get In Touch</h2>
+
+<p>
+Follow Retro Revivals and keep up with the latest finds,
+products and nostalgia.
 </p>
 
 <div class="social">
@@ -372,10 +364,11 @@ products and retro collectibles.
 
 </main>
 
+
 <footer>
 
 <p>
-&copy; 2026 Retro Revivals. All Rights Reserved.
+&copy; 2026 <strong>Retro Revivals</strong>. All Rights Reserved.
 </p>
 
 <p>
@@ -384,24 +377,41 @@ Bringing Nostalgia Back To Life
 
 </footer>
 
+
 <script>
 
 let deferredPrompt = null;
 
-window.addEventListener("beforeinstallprompt", function(event) {
+const installButton =
+document.getElementById("installButton");
+
+
+window.addEventListener(
+"beforeinstallprompt",
+function(event) {
 
 event.preventDefault();
 
 deferredPrompt = event;
 
-document.getElementById("installButton").style.display = "inline-block";
+installButton.style.display = "block";
 
-});
+}
+);
 
-document.getElementById("installButton").addEventListener("click", async function() {
+
+installButton.addEventListener(
+"click",
+async function() {
 
 if (!deferredPrompt) {
+
+alert(
+"Open the Chrome menu and choose Install app or Add to Home screen."
+);
+
 return;
+
 }
 
 deferredPrompt.prompt();
@@ -410,33 +420,38 @@ await deferredPrompt.userChoice;
 
 deferredPrompt = null;
 
-document.getElementById("installButton").style.display = "none";
+installButton.style.display = "none";
 
-});
+}
+);
 
-window.addEventListener("appinstalled", function() {
-
-document.getElementById("installButton").style.display = "none";
-
-});
 
 if ("serviceWorker" in navigator) {
 
-window.addEventListener("load", function() {
+window.addEventListener(
+"load",
+function() {
 
-navigator.serviceWorker.register("./service-worker.js")
+navigator.serviceWorker
+.register("./service-worker.js")
 .then(function() {
 
-console.log("Retro Revivals service worker registered.");
+console.log(
+"Retro Revivals app is ready."
+);
 
 })
 .catch(function(error) {
 
-console.error("Service worker failed:", error);
+console.error(
+"Service worker error:",
+error
+);
 
 });
 
-});
+}
+);
 
 }
 
