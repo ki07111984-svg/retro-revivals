@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff1493"/><stop offset=".5" stop-color="#6d2cff"/><stop offset="1" stop-color="#00a8ff"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="900" height="560" rx="34" fill="#08080d"/><path d="M0 430 Q450 250 900 430 V560 H0Z" fill="#111222"/><g opacity=".25" stroke="#00a8ff"><path d="M0 470H900M0 510H900"/><path d="M100 430L0 560M220 400L120 560M680 400L780 560M800 430L900 560"/></g>
+<rect x="210" y="120" width="480" height="270" rx="45" fill="#171923" stroke="url(#g)" stroke-width="12" filter="url(#glow)"/>
+<rect x="250" y="160" width="400" height="150" rx="18" fill="#050508" stroke="#333" stroke-width="5"/>
+<circle cx="330" cy="235" r="28" fill="#ff1493"/><circle cx="570" cy="220" r="18" fill="#00a8ff"/><circle cx="615" cy="260" r="18" fill="#ffb000"/>
+<path d="M350 365h-85l-40 55h250l-40-55z" fill="#222536" stroke="#777"/><path d="M340 390h180" stroke="url(#g)" stroke-width="10" filter="url(#glow)"/>
+<text x="450" y="90" text-anchor="middle" fill="white" font-family="Arial" font-weight="900" font-size="42">RETRO GAMING</text></svg>
