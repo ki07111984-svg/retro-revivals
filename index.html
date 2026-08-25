@@ -6,9 +6,304 @@
 
 <title>Retro Revivals | Retro Games, Toys & Collectibles</title>
 
-<meta name="description" content="Retro Revivals - retro games, Pokémon cards, vintage toys and collectibles. Bringing nostalgia back to life.">
+<meta name="description" content="Retro Revivals - bringing nostalgia back to life. Retro games, toys, Pokémon cards, consoles and collectables.">
 
 <style>
-
 * {
-    box-sizing: border
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  background: #1b1b1b;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #00e676;
+}
+
+.logo {
+  max-width: 220px;
+  width: 80%;
+  height: auto;
+}
+
+h1 {
+  margin: 15px 0 5px;
+  font-size: 42px;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #00e676;
+}
+
+nav {
+  background: #000;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00e676;
+}
+
+.hero {
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #151515, #292929);
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #00e676;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #202020;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #333;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00e676;
+}
+
+.card img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #00e676;
+  font-size: 22px;
+}
+
+.card p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.about {
+  background: #191919;
+  max-width: none;
+  text-align: center;
+}
+
+.about p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  font-size: 18px;
+}
+
+.social {
+  margin-top: 25px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 20px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.social a:hover {
+  background: #00e676;
+  color: #000;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 30px 15px;
+  color: #aaa;
+  border-top: 2px solid #00e676;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Retro Revivals Logo" class="logo">
+
+  <h1>RETRO REVIVALS</h1>
+
+  <div class="tagline">Bringing Nostalgia Back To Life</div>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#categories">Categories</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section class="hero" id="home">
+  <h2>Welcome to Retro Revivals</h2>
+
+  <p>
+    Your place for retro games, classic toys, Pokémon cards,
+    consoles and collectables.
+  </p>
+
+  <a href="#categories" class="button">Explore Retro</a>
+</section>
+
+<section id="categories">
+  <h2>What We Collect</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="gaming.svg" alt="Gaming">
+      <h3>Retro Gaming</h3>
+      <p>
+        Classic consoles, games and gaming memorabilia.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="cards.svg" alt="Trading Cards">
+      <h3>Trading Cards</h3>
+      <p>
+        Pokémon cards and other collectible trading cards.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="collectibles.svg" alt="Collectibles">
+      <h3>Collectables</h3>
+      <p>
+        Vintage toys, figures and nostalgic collectables.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About Retro Revivals</h2>
+
+  <p>
+    Retro Revivals is all about bringing the nostalgia of
+    yesterday back to life. From classic games and consoles
+    to Pokémon cards, toys and collectables, we're passionate
+    about finding great retro items and giving them a new home.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Get In Touch</h2>
+
+  <p>
+    Follow Retro Revivals and keep up with our latest finds.
+  </p>
+
+  <div class="social">
+    <a href="#" target="_blank">Facebook</a>
+    <a href="#" target="_blank">Instagram</a>
+    <a href="#" target="_blank">TikTok</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Retro Revivals. All rights reserved.</p>
+  <p>Bringing Nostalgia Back To Life</p>
+</footer>
+
+</body>
+</html>
